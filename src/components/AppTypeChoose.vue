@@ -1,5 +1,4 @@
 <script>
-
 import CharactersList from "./CharactersList.vue";
 import CharactersStats from "./CharactersStats.vue";
 

@@ -13,7 +13,6 @@ export default {
   created() {
     this.store.loading = true;
     axios.get(this.store.apiUrl).then((resp) => {
-      console.log(resp);
       this.store.characters = resp.data.data;
       this.store.loading = false;
     });

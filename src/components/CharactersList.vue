@@ -17,7 +17,6 @@ export default {
 </script>
 
 <template>
-  <div class="all">
     <div class="container">
     <AppLoader v-if="store.loading" />
     <div class="row " v-else>
@@ -25,7 +24,6 @@ export default {
         <AppCard :character="character" />
       </div>
     </div>
-  </div>
   </div>
 </template>
 

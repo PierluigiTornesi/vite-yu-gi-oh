@@ -13,7 +13,7 @@ export default {
 <template>
   <div class="container">
     <div class=" text-white number">
-      <h6>Totale {{ store.characters.length }} personaggi</h6>
+      <h6>Found  {{ store.characters.length }} cards</h6>
     </div>
   </div>
 </template>

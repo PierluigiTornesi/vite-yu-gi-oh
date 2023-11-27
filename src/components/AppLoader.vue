@@ -5,5 +5,5 @@
 </script>
 
 <template>
-    <h2>Loading...</h2>
+    <h2>Caricamento delle carte...</h2>
 </template>
