@@ -11,11 +11,9 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <div class=" text-white number">
-      <h6>Found  {{ store.characters.length }} cards</h6>
+    <div class="container text-white number">
+        <h6>Found  {{ store.characters.length }} cards</h6>
     </div>
-  </div>
 </template>
 
 
