@@ -21,15 +21,25 @@ export default {
   components: { AppHeader, AppTypeChoose, CharactersList },
   methods: {
     handleSearch() {
+      this.store.loading = true;
       console.log("Cerca");
-      axios.get(this.store.apiUrl, {
+      
+      if(this.store.selectedArc !== ""){
+        axios.get(this.store.apiUrl, {
           params: {
-            archetype: this.store.searchText,
+            archetype: this.store.selectedArc,
           },
         })
         .then((resp) => {
           this.store.characters = resp.data.data;
+          this.store.loading = false;
         });
+      }else{
+        axios.get(this.store.apiUrl).then((resp) => {
+        this.store.characters = resp.data.data;
+        this.store.loading = false;
+    });
+      }
     },
   },
 };

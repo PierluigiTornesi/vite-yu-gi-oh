@@ -14,11 +14,13 @@ import { store } from '../store';
     <div class="back">
         <div class="container pb-3">
             <div class="select-div">
-                <select class="form-select" aria-label="Default select example" v-model.trim="store.searchText" @change="$emit('performSearch')">
+                <select class="form-select" aria-label="Default select example" v-model="store.selectedArc" @change="$emit('performSearch')">
                     <option disabled>Seleziona un archetype</option>
+                    <option value="">Tutti</option>
                     <option value="Alien">Alien</option>
                     <option value="Ally of Justice">Ally of Justice</option>
                     <option value="Ancient Gear">Ancient Gear</option>
+                    <option value="Blue-Eyes">Blue-Eyes</option>
                 </select>
             </div>
         </div>
