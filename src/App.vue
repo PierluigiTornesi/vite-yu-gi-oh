@@ -32,6 +32,11 @@ export default {
         })
         .then((resp) => {
           this.store.characters = resp.data.data;
+        })
+        .catch((err) => {
+          alert("valore non valido");
+        })
+        .finally(() =>{
           this.store.loading = false;
         });
       }else{

@@ -20,6 +20,7 @@ import { store } from '../store';
                     <option value="Alien">Alien</option>
                     <option value="Ally of Justice">Ally of Justice</option>
                     <option value="Ancient Gear">Ancient Gear</option>
+                    <option value="Baby">Baby</option>
                     <option value="Blue-Eyes">Blue-Eyes</option>
                 </select>
             </div>
